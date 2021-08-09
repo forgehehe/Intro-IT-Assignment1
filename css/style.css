@@ -4,6 +4,9 @@
 
 body {
     background-color: #4e4e4e;
+    background-image: url(../images/bg.jpeg);
+    background-repeat: repeat;
+    background-size: 50%;
     font-family: 'Roboto', sans-serif;
     text-align: center;
     padding-top: 20px;
@@ -17,6 +20,17 @@ hr {
     border-color: #000;
 }
 
+h1 {
+    font-family: 'MonteCarlo', cursive;
+    font-size: 100px;
+    text-shadow: 2px 5px white;
+    padding-left: 5%;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+/** Section 1 Styling **/
+
 .section1 {
     background: linear-gradient(45deg, rgba(60,104,166,1) 0%, rgba(196,221,255,1) 100%);
     margin: auto;
@@ -27,20 +41,12 @@ hr {
     padding-left: 25px;
 }
 
-.section1 h1 {
-    font-family: 'MonteCarlo', cursive;
-    font-size: 100px;
-    text-shadow: 2px 5px white;
-    padding-left: 5%;
-    text-align: left;
-    margin-bottom: 0;
-}
-
 .section1 h2 {
     
     font-size: 18px;
     padding-left: 5%;
     text-align: left;
+    word-spacing: 75px;
 }
 
 .section1 span img {
@@ -80,6 +86,32 @@ hr {
     transform: scale(1.5);
 }
 
+/** Section 2 Styling **/
+
+.section2 {
+    background: linear-gradient(45deg, rgba(190,162,35,1) 0%, rgba(255,254,148,1) 100%);
+    margin: auto;
+    width: 50%;
+    height: fit-content;
+    border-radius: 20px;
+    filter: drop-shadow(0 0 5px black);
+    padding-left: 25px;
+    padding-bottom: 50px;
+}
+
+ol li {
+    width: fit-content;
+    padding-left: 15px;
+}
+
 #goku {
     margin-top: 100px;
+}
+
+/** Footer Styling **/
+
+footer {
+    width: 100%;
+    color: #FFF;
+    filter: opacity(0.5);
 }

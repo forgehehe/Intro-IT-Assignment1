@@ -10,10 +10,11 @@ body {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     padding-top: 20px;
+    
 }
 
 hr {
-    width: 75%;
+    width: 95%;
     float: left;
     padding-left: 5%;
     margin-top: 25px;
@@ -33,14 +34,18 @@ h1 {
 
 .section1 {
     background: linear-gradient(45deg, rgba(60,104,166,1) 0%, rgba(196,221,255,1) 100%);
+    min-width: 650px;
+    max-width: 50%;
     margin: auto;
-    width: 50%;
     height: 600px;
     padding-left: 25px;
     padding-right: 25px;
     border-radius: 20px;
     filter: drop-shadow(0 0 5px black);
-    padding-left: 25px;
+}
+
+.section1 hr {
+    width: 75%;
 }
 
 .section1 h2 {
@@ -88,6 +93,9 @@ h1 {
     transform: scale(1.5);
 }
 
+#goku {
+    margin-top: 100px;
+}
 /** Section 2 Styling **/
 
 .content {
@@ -96,31 +104,68 @@ h1 {
 
 .section2 {
     background: linear-gradient(45deg, rgba(190,162,35,1) 0%, rgba(255,254,148,1) 100%);
+    min-width: 650px;
+    max-width: 50%;
     margin: auto;
-    width: 50%;
     height: fit-content;
-    border-radius: 20px;
-    filter: drop-shadow(0 0 5px black);
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 50px;
+    border-radius: 20px;
+    filter: drop-shadow(0 0 5px black);
 }
 
-.section2 hr {
-    width: 95%;
-}
-
-.section2 h2, .section2 h3 {
+.section2 h2{
     text-align: center;
 }
 
-ol li {
+.section2 h3 {
+    font-size: 18px;
+}
+
+.section2 ol li {
     width: fit-content;
     padding-left: 15px;
 }
 
-#goku {
-    margin-top: 100px;
+.section2 table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.section2 table tr td {
+    padding: 5px 25px 5px 25px;
+    border: 1px dashed #000;
+}
+
+/** Section 3 Styling **/
+
+.section3 {
+    background: linear-gradient(45deg, rgba(73,73,73,1) 0%, rgba(207,207,207,1) 100%);
+    min-width: 650px;
+    max-width: 50%;
+    margin: auto;
+    height: fit-content;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 50px;
+    border-radius: 20px;
+    filter: drop-shadow(0 0 5px black);
+}
+
+/** Section 4 Styling **/
+
+.section4 {
+    background: linear-gradient(45deg, rgba(149,89,28,1) 0%, rgba(255,135,13,1) 100%);
+    min-width: 650px;
+    max-width: 50%;
+    margin: auto;
+    height: fit-content;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 50px;
+    border-radius: 20px;
+    filter: drop-shadow(0 0 5px black);
 }
 
 /** Footer Styling **/

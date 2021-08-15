@@ -2,15 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
 
+/** Global Styling **/
+
 body {
     background-color: #4e4e4e;
     background-image: url(../images/bg.jpeg);
     background-repeat: repeat;
     background-size: 50%;
     font-family: 'Roboto', sans-serif;
-    text-align: center;
+    text-align: left;
     padding-top: 20px;
-    
 }
 
 hr {
@@ -24,24 +25,41 @@ hr {
 h1 {
     font-family: 'MonteCarlo', cursive;
     font-size: 100px;
-    text-shadow: 2px 5px white;
+    text-shadow: 2px 5px #FFF;
     padding-left: 5%;
-    text-align: left;
     margin-bottom: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.section1,
+.section2,
+.section3,
+.section4,
+.section5 {
+    min-width: 650px;
+    max-width: 50%;
+    margin: auto;
+    height: fit-content;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 50px;
+    border-radius: 20px;
+    filter: drop-shadow(0 0 5px #000);
 }
 
 /** Section 1 Styling **/
 
 .section1 {
     background: linear-gradient(45deg, rgba(60,104,166,1) 0%, rgba(196,221,255,1) 100%);
-    min-width: 650px;
-    max-width: 50%;
-    margin: auto;
     height: 600px;
-    padding-left: 25px;
-    padding-right: 25px;
-    border-radius: 20px;
-    filter: drop-shadow(0 0 5px black);
 }
 
 .section1 hr {
@@ -49,21 +67,18 @@ h1 {
 }
 
 .section1 h2 {
-    
     font-size: 18px;
     padding-left: 5%;
-    text-align: left;
     word-spacing: 75px;
 }
 
 .section1 span img {
-    border-radius: 15%;
-    filter: drop-shadow(0 0 5px black);
+    filter: drop-shadow(0 0 5px #000);
     position: absolute;
+    border-radius: 15%;
     left: 85%;
     top: -35px;
 }
-
 
 .section1 ul {
     margin-top: 100px;
@@ -76,56 +91,29 @@ h1 {
 .section1 ul li {
     margin-top: 10px;
     list-style: none;
-    width: 27%;
+    width: 22%;
     float: left;
     transition: transform .2s
 }
 
 .section1 a {
-    font-family: 'Roboto', sans-serif;
     font-weight: 600;
-    text-decoration: none;
-    color: black;
 }
+
 .section1 ul li:hover {
     text-decoration: underline;
-    filter: drop-shadow(0 0 5px white);
+    filter: drop-shadow(0 0 5px #FFF);
     transform: scale(1.5);
 }
 
 #goku {
     margin-top: 100px;
 }
-/** Section 2 Styling **/
 
-.content {
-    text-align: left;
-}
+/** Section 2 Styling **/
 
 .section2 {
     background: linear-gradient(45deg, rgba(190,162,35,1) 0%, rgba(255,254,148,1) 100%);
-    min-width: 650px;
-    max-width: 50%;
-    margin: auto;
-    height: fit-content;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 50px;
-    border-radius: 20px;
-    filter: drop-shadow(0 0 5px black);
-}
-
-.section2 h2{
-    text-align: center;
-}
-
-.section2 h3 {
-    font-size: 18px;
-}
-
-.section2 ol li {
-    width: fit-content;
-    padding-left: 15px;
 }
 
 .section2 table {
@@ -141,31 +129,23 @@ h1 {
 /** Section 3 Styling **/
 
 .section3 {
-    background: linear-gradient(45deg, rgba(73,73,73,1) 0%, rgba(207,207,207,1) 100%);
-    min-width: 650px;
-    max-width: 50%;
-    margin: auto;
-    height: fit-content;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 50px;
-    border-radius: 20px;
-    filter: drop-shadow(0 0 5px black);
+    background: linear-gradient(45deg, rgba(121,163,45,1) 0%, rgba(196,237,122,1) 100%);
 }
 
 /** Section 4 Styling **/
 
 .section4 {
-    background: linear-gradient(45deg, rgba(149,89,28,1) 0%, rgba(255,135,13,1) 100%);
-    min-width: 650px;
-    max-width: 50%;
-    margin: auto;
-    height: fit-content;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 50px;
-    border-radius: 20px;
-    filter: drop-shadow(0 0 5px black);
+    background: linear-gradient(45deg, rgba(104,71,147,1) 0%, rgba(201,167,244,1) 100%);
+}
+
+.section4 a:hover {
+    text-decoration: underline;
+}
+
+/** Section 5 Styling **/
+
+.section5 {
+    background: linear-gradient(45deg, rgba(186,48,48,1) 0%, rgba(255,145,145,1) 100%);
 }
 
 /** Footer Styling **/

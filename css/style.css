@@ -7,8 +7,7 @@
 body {
     background-color: #4e4e4e;
     background-image: url(../images/bg.jpeg);
-    background-repeat: repeat;
-    background-size: 50%;
+    background-size: 1000px;
     font-family: 'Roboto', sans-serif;
     text-align: left;
     padding-top: 20px;
@@ -39,11 +38,11 @@ a {
     color: black;
 }
 
-.section1,
-.section2,
-.section3,
-.section4,
-.section5 {
+.start,
+.aboutMe,
+.idealJob,
+.personalProfile,
+.projectIdea {
     min-width: 650px;
     max-width: 50%;
     margin: auto;
@@ -55,24 +54,26 @@ a {
     filter: drop-shadow(0 0 5px #000);
 }
 
+
 /** Section 1 Styling **/
 
-.section1 {
+.start {
     background: linear-gradient(45deg, rgba(60,104,166,1) 0%, rgba(196,221,255,1) 100%);
     height: 600px;
 }
 
-.section1 hr {
+.start hr {
     width: 75%;
 }
 
-.section1 h2 {
+.start h2 {
     font-size: 18px;
     padding-left: 5%;
     word-spacing: 75px;
+    text-align: left;
 }
 
-.section1 span img {
+.start span img {
     filter: drop-shadow(0 0 5px #000);
     position: absolute;
     border-radius: 15%;
@@ -80,27 +81,31 @@ a {
     top: -35px;
 }
 
-.section1 ul {
+.start ul {
     margin-top: 100px;
-    width: fit-content;
+    width: 75%;
     height: 40px;
-    width: 65%;
     border: 2px solid #000;
 }
 
-.section1 ul li {
+.start ul li {
     margin-top: 10px;
     list-style: none;
-    width: 22%;
     float: left;
-    transition: transform .2s
+    transition: transform .2s;
+    width: 25%;
 }
 
-.section1 a {
+.start ul li ::first-letter {
+    padding-left: 10px;
+}
+
+
+.start a {
     font-weight: 600;
 }
 
-.section1 ul li:hover {
+.start ul li:hover {
     text-decoration: underline;
     filter: drop-shadow(0 0 5px #FFF);
     transform: scale(1.5);
@@ -112,45 +117,75 @@ a {
 
 /** Section 2 Styling **/
 
-.section2 {
+.aboutMe {
     background: linear-gradient(45deg, rgba(190,162,35,1) 0%, rgba(255,254,148,1) 100%);
 }
 
-.section2 table {
+.aboutMe table {
     margin: auto;
     border-collapse: collapse;
 }
 
-.section2 table tr td {
+.aboutMe table tr td {
     padding: 5px 25px 5px 25px;
     border: 1px dashed #000;
 }
 
 /** Section 3 Styling **/
 
-.section3 {
+.idealJob {
     background: linear-gradient(45deg, rgba(121,163,45,1) 0%, rgba(196,237,122,1) 100%);
 }
 
 /** Section 4 Styling **/
 
-.section4 {
+.personalProfile {
     background: linear-gradient(45deg, rgba(104,71,147,1) 0%, rgba(201,167,244,1) 100%);
 }
 
-.section4 a:hover {
+#imgRight p {
+    width: 50%;
+    float: left;
+}
+
+#imgRight img {
+    padding-left: 100px;
+}
+
+#imgLeft p {
+    width: 35%;
+    float: right;
+}
+
+
+@media only screen and (max-width: 1550px) {
+    #imgRight img {
+        padding-left: 50px;
+    }
+}
+
+.personalProfile a:hover,
+.idealJob a:hover {
     text-decoration: underline;
 }
 
 /** Section 5 Styling **/
 
-.section5 {
+.projectIdea {
     background: linear-gradient(45deg, rgba(186,48,48,1) 0%, rgba(255,145,145,1) 100%);
+}
+
+.projectIdea span img {
+    position: absolute;
+    right: 3%;
+    top: 0px;
+    width: 180px; 
 }
 
 /** Footer Styling **/
 
 footer {
+    text-align: center;
     width: 100%;
     color: #FFF;
     filter: opacity(0.5);

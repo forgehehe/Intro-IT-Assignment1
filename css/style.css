@@ -144,6 +144,7 @@ a {
 }
 
 #imgRight p {
+    padding-top: 15%;
     width: 50%;
     float: left;
 }
@@ -172,7 +173,7 @@ a {
 /** Section 5 Styling **/
 
 .projectIdea {
-    background: linear-gradient(45deg, rgba(186,48,48,1) 0%, rgba(255,145,145,1) 100%);
+    background: linear-gradient(45deg, rgba(173,80,80,1) 0%, rgba(231,187,187,1) 100%);
 }
 
 .projectIdea span img {

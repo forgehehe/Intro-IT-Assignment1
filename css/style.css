@@ -1,9 +1,29 @@
-/**Font Imports**/
+/** =========================
+        Table of Contents 
+    ========================= 
+    1. Font Imports
+    2. Global Styling
+        2.1 Section Styling
+        2.2 Unique Text Styling
+    3. Background Styling
+    4. Link Styling
+    5. List Styling
+    6. Table Styling
+    7. Image Styling
+    8. Footer Styling    
+**/
+    
+
+
+/** ======================
+        1. Font Imports 
+    ====================== **/
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
 
-/** Global Styling **/
-
+/** ======================
+        2. Global Styling 
+    ====================== **/
 body {
     background-color: #4e4e4e;
     background-image: url(../images/bg.jpeg);
@@ -12,7 +32,6 @@ body {
     text-align: left;
     padding-top: 20px;
 }
-
 hr {
     width: 95%;
     float: left;
@@ -20,7 +39,6 @@ hr {
     margin-top: 25px;
     border-color: #000;
 }
-
 h1 {
     font-family: 'MonteCarlo', cursive;
     font-size: 100px;
@@ -28,66 +46,94 @@ h1 {
     padding-left: 5%;
     margin-bottom: 0;
 }
-
 h2 {
     text-align: center;
 }
+    /** =============================
+            2.1 Section Styling
+        ============================= **/
+    .start,
+    .aboutMe,
+    .idealJob,
+    .personalProfile,
+    .projectIdea {
+        min-width: 650px;
+        max-width: 50%;
+        margin: auto;
+        height: fit-content;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 50px;
+        border-radius: 20px;
+        filter: drop-shadow(0 0 5px #000);
+    }
+    /** =============================
+            2.2 Unique Text Styling
+        ============================= **/
+    .start hr {
+        width: 75%;
+    }
+    .start h2 {
+        font-size: 18px;
+        padding-left: 5%;
+        word-spacing: 75px;
+        text-align: left;
+    }
+    #imgRight p {
+        padding-top: 15%;
+        width: 50%;
+        float: left;
+    }
+    #imgLeft p {
+        width: 35%;
+        float: right;
+    }
 
-a {
-    text-decoration: none;
-    color: black;
-}
-
-.start,
-.aboutMe,
-.idealJob,
-.personalProfile,
-.projectIdea {
-    min-width: 650px;
-    max-width: 50%;
-    margin: auto;
-    height: fit-content;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 50px;
-    border-radius: 20px;
-    filter: drop-shadow(0 0 5px #000);
-}
-
-
-/** Section 1 Styling **/
-
+/** =============================
+        3. Backgrounds Styling 
+    ============================= **/
 .start {
     background: linear-gradient(45deg, rgba(60,104,166,1) 0%, rgba(196,221,255,1) 100%);
     height: 600px;
 }
-
-.start hr {
-    width: 75%;
+.aboutMe {
+    background: linear-gradient(45deg, rgba(190,162,35,1) 0%, rgba(255,254,148,1) 100%);
+}
+.personalProfile {
+    background: linear-gradient(45deg, rgba(104,71,147,1) 0%, rgba(201,167,244,1) 100%);
+}
+.idealJob {
+    background: linear-gradient(45deg, rgba(121,163,45,1) 0%, rgba(196,237,122,1) 100%);
+}
+.projectIdea {
+    background: linear-gradient(45deg, rgba(173,80,80,1) 0%, rgba(231,187,187,1) 100%);
 }
 
-.start h2 {
-    font-size: 18px;
-    padding-left: 5%;
-    word-spacing: 75px;
-    text-align: left;
+/** ======================
+        4. Link Styling
+    ====================== **/
+a {
+    text-decoration: none;
+    color: #000;
+}
+.start a {
+    font-weight: 600;
+}
+.projectIdea a:hover,
+.personalProfile a:hover,
+.idealJob a:hover {
+    text-decoration: underline;
 }
 
-.start span img {
-    filter: drop-shadow(0 0 5px #000);
-    position: absolute;
-    border-radius: 15%;
-    left: 85%;
-    top: -35px;
-}
-
+/** ======================
+        5. List Styling
+    ====================== **/
 .start ul {
     margin-top: 100px;
     width: 75%;
     height: 40px;
     border: 2px solid #000;
 }
-
 .start ul li {
     margin-top: 10px;
     list-style: none;
@@ -95,96 +141,58 @@ a {
     transition: transform .2s;
     width: 25%;
 }
-
 .start ul li ::first-letter {
     padding-left: 10px;
 }
-
-
-.start a {
-    font-weight: 600;
-}
-
 .start ul li:hover {
     text-decoration: underline;
     filter: drop-shadow(0 0 5px #FFF);
     transform: scale(1.5);
 }
 
-#goku {
-    margin-top: 100px;
+/** ======================
+        6. Image Styling
+    ====================== **/
+.start span img {
+    filter: drop-shadow(0 0 5px #000);
+    position: absolute;
+    border-radius: 15%;
+    left: 85%;
+    top: -35px;
 }
-
-/** Section 2 Styling **/
-
-.aboutMe {
-    background: linear-gradient(45deg, rgba(190,162,35,1) 0%, rgba(255,254,148,1) 100%);
-}
-
-.aboutMe table {
-    margin: auto;
-    border-collapse: collapse;
-}
-
-.aboutMe table tr td {
-    padding: 5px 25px 5px 25px;
-    border: 1px dashed #000;
-}
-
-/** Section 3 Styling **/
-
-.idealJob {
-    background: linear-gradient(45deg, rgba(121,163,45,1) 0%, rgba(196,237,122,1) 100%);
-}
-
-/** Section 4 Styling **/
-
-.personalProfile {
-    background: linear-gradient(45deg, rgba(104,71,147,1) 0%, rgba(201,167,244,1) 100%);
-}
-
-#imgRight p {
-    padding-top: 15%;
-    width: 50%;
-    float: left;
-}
-
 #imgRight img {
     padding-left: 100px;
 }
-
-#imgLeft p {
-    width: 35%;
-    float: right;
-}
-
-
 @media only screen and (max-width: 1550px) {
     #imgRight img {
         padding-left: 50px;
     }
 }
-
-.personalProfile a:hover,
-.idealJob a:hover {
-    text-decoration: underline;
-}
-
-/** Section 5 Styling **/
-
-.projectIdea {
-    background: linear-gradient(45deg, rgba(173,80,80,1) 0%, rgba(231,187,187,1) 100%);
-}
-
 .projectIdea span img {
     position: absolute;
     right: 3%;
     top: 0px;
     width: 180px; 
 }
+#startBottomImg {
+    margin-top: 100px;
+}
 
-/** Footer Styling **/
+/** ======================
+        7. Table Styling
+    ====================== **/
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+table tr td {
+    padding: 5px 25px 5px 25px;
+    border: 1px dashed #000;
+}
 
+/** ======================
+        8. Footer Styling
+    ====================== **/
 footer {
     text-align: center;
     width: 100%;
